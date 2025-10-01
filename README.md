@@ -114,7 +114,7 @@ python manage.py runserver
 
 **Registration Page**
 
-![Registration Page](image/s1.png)
+![Registration Page](static/image/s1.png)
 
 **Success Page**
 
