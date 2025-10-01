@@ -1,0 +1,112 @@
+/* =======================
+   General Body Styling
+======================= */
+body {
+    background-image: url("../image/img.webp");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    margin: 0;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+
+
+/* Optional gradient overlay to make text pop */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.25);
+    z-index: -1;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(12px);          
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    width: 350px;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0); 
+    transition: all 0.3s ease;
+}
+
+
+.card:hover {
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0);
+    transform: translateY(-3px);
+}
+
+.card-header {
+    background: rgba(0, 0, 0, 0);
+    color: #f04a09;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: none;
+}
+
+
+.card-footer {
+    background: transparent;
+    text-align: center;
+    
+}
+
+.card-footer a {
+    color: #0d6efd;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.card-footer a:hover {
+    text-decoration: underline;
+}
+
+
+.form-label, .form-control {
+    color: #fff;
+}
+
+.form-control {
+    background: rgba(255,255,255,0.1);
+    border: none;
+    border-radius: 6px;
+}
+
+.form-control:focus {
+    background: rgba(255,255,255,0.2);
+    color: #000000;
+    box-shadow: none;
+    transition: background 0.3s, color 0.3s;
+}
+
+
+.btn-primary {
+    background-color: #fd490d;
+    border: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0b5ed7;
+}
+
+
+@media(max-width: 400px) {
+    .card {
+        width: 90%;
+        padding: 15px;
+    }
+}
