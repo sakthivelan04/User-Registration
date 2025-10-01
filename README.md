@@ -23,7 +23,7 @@ project_root/
 
 │ ├─ urls.py # App-specific URLs
 
-│ └─ templates/app/ # HTML templates
+├─ templates/app/ # HTML templates
 
 │ ├─ register.html
 
